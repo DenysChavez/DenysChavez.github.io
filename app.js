@@ -3,8 +3,6 @@ const sectBtns = document.querySelectorAll(".controls");
 const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 
-console.log(allSections);
-
 function pageTransition() {
     //button clicked active class: add a class with the name "active-bn" and delete the name of "active-bn" class to the other classes
     for (let i = 0; i < sectBtn.length; i++) {
@@ -38,7 +36,7 @@ function pageTransition() {
     const themeBtn = document.querySelector(".theme-btn");
     themeBtn.addEventListener("click", () => {
         let element = document.body;
-        element.classList.toggle("light-mode")
+        element.classList.toggle("dark-mode")
     })
 }
 
